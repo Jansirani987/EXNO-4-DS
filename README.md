@@ -4,7 +4,7 @@ To read the given data and perform Feature Scaling and Feature Selection process
 data to a file.
 
 # ALGORITHM:
-STEP 1:Read the given Data.
+STEP 1:Read the given Data. 
 STEP 2:Clean the Data Set using Data Cleaning Process.
 STEP 3:Apply Feature Scaling for the feature in the data set.
 STEP 4:Apply Feature Selection for the feature in the data set. 
