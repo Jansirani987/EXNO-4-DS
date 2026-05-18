@@ -7,9 +7,9 @@ data to a file.
 STEP 1:Read the given Data.
 STEP 2:Clean the Data Set using Data Cleaning Process.
 STEP 3:Apply Feature Scaling for the feature in the data set.
-STEP 4:Apply Feature Selection for the feature in the data set.
+STEP 4:Apply Feature Selection for the feature in the data set. 
 STEP 5:Save the data to the file.
-
+  
 # FEATURE SCALING:
 1. Standard Scaler: It is also called Z-score normalization. It calculates the z-score of each value and replaces the value with the calculated Z-score. The features are then rescaled with x̄ =0 and σ=1
 2. MinMaxScaler: It is also referred to as Normalization. The features are scaled between 0 and 1. Here, the mean value remains same as in Standardization, that is,0.
@@ -24,6 +24,39 @@ The feature selection techniques used are:
 3.Embedded Method
 
 # CODING AND OUTPUT:
-       # INCLUDE YOUR CODING AND OUTPUT SCREENSHOTS HERE
+
+```
+import pandas as pd
+import numpy as np
+import seaborn as sns
+
+from sklearn.model_selection import train_test_split
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix
+
+data=pd.read_csv("/content/income(1) (1).csv",na_values=[ " ?"])
+data
+
+```
+<img width="1663" height="727" alt="Screenshot 2026-05-19 013120" src="https://github.com/user-attachments/assets/766dcbdb-0cd9-427e-a8d4-90292fc0c7c3" />
+
+```
+data.isnull().sum()
+
+```
+
+<img width="534" height="636" alt="Screenshot 2026-05-19 013424" src="https://github.com/user-attachments/assets/be99f6b3-68a1-4421-b645-35a7a2706e67" />
+
+```
+missing=data[data.isnull().any(axis=1)]
+missing
+
+```
+
+<img width="1688" height="725" alt="Screenshot 2026-05-19 013723" src="https://github.com/user-attachments/assets/97c500cb-9a68-42b4-8480-f167aeadc0e9" />
+
+
+
+
 # RESULT:
        # INCLUDE YOUR RESULT HERE
